@@ -21,7 +21,7 @@ user        = 'John'; // STRING
 age         = 25; // INT
 message     = 'Hello'; // STRING
 
-let user = 'John', age = 25, message = 'Hello';  // more convenient+
+let user = 'John', age = 25, message = 'Hello';  // more convenient
 
 
 
@@ -112,9 +112,15 @@ alert (5%2); // == 1 (2*2 = 4 + 1 = 5)
 
 // operators 
 
+
 // OR
+
+let y;
+alert(y || 'Y ist nicht definiert.');
+
 let name    = 'John';
 let age     = 25;
+
 
 if (name == 'Johnny' || age == 25) {
     alert('true');   
@@ -128,7 +134,7 @@ if (name == 'Johnny' && age == 25) {
     alert('true');   // wouldn't run
 }
 
-// ??
+// ?? Variable defined or die => 'Anonymous/John'
 
 let user;
 alert(user ?? "Anonymous"); // Anonymous
@@ -155,5 +161,60 @@ do {
 // for loop
 for (let i = 0; i < 3; i++) { // shows 0, then 1, then 2
     alert(i);
+}
+
+// SWITCH statement
+let x = 3;
+switch(x){
+    case 1:
+        break;
+    case 2:
+        break;
+    case 4:
+    case 5: // TWO CONDITIONS 
+        alert('number is 4 or 5');
+        break
+    default:
+        alert('none of those ');
+}
+
+// FUNCTIONS
+function showMessage(msg = "No text given.") {
+    alert(msg);
+}
+// run
+showMessage(); // "No text given."
+showMessage('Hello.'); // "Hello."
+
+
+function errorMsg(){
+    return 'Nooo text given.';
+}
+function showMessage2(msg = errorMsg()); {
+    alert(msg);
+}
+showMessage2(); // "Nooo text given."
+showMessage2('Hello.'); // "Hello."
+
+// functions can also be defined like this
+let showMessage3 = function(msg = errorMsg()) {
+
+}
+
+// IF CLAUSE
+
+function ask(question, yes, no) {
+    if (confirm(question)) yes()
+    else no();
+}
+
+// is the same as: 
+
+function ask(question, yes, no) {
+    if (confirm(question)) {
+        yes()
+    } else {
+        no();
+    }
   }
 
