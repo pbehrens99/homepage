@@ -14,6 +14,9 @@ if (isset($_GET['page'])) {
 <html>
     <head>
         <title><?php echo $Controller->getPageTitle($page); ?></title>
+        <script src='https://code.jquery.com/jquery-3.5.1.js'></script>
+        <script src='js/main.js'></script>
+        <link rel='stylesheet' type='text/css' href='css/main.css'/>
         <meta charset="UTF-8"/>
     </head>
     <body>
