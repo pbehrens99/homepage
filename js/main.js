@@ -108,3 +108,30 @@ alert(5**3); // 5^3 bzw. 5*5*5 == 125
 // remainder (Rest)
 alert (5%2); // == 1 (2*2 = 4 + 1 = 5)
 
+
+
+// operators 
+
+// OR
+let name    = 'John';
+let age     = 25;
+
+if (name == 'Johnny' || age == 25) {
+    alert('true');   
+}
+
+// AND
+let name    = 'John';
+let age     = 25;
+
+if (name == 'Johnny' && age == 25) {
+    alert('true');   // wouldn't run
+}
+
+// ??
+
+let user;
+alert(user ?? "Anonymous"); // Anonymous
+
+let user = "John";
+alert(user ?? "Anonymous"); // John
