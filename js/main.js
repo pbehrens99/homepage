@@ -135,3 +135,25 @@ alert(user ?? "Anonymous"); // Anonymous
 
 let user = "John";
 alert(user ?? "Anonymous"); // John
+
+
+// while & for loops
+let i = 0;
+while (i <= 10) { // script will run a long as index is below ten OR ten
+    alert(i);
+    i++; // i = i + 1
+}
+
+// same shit, different way
+
+let i = 0;
+do {
+  alert(i);
+  i++;
+} while (i <= 10);
+
+// for loop
+for (let i = 0; i < 3; i++) { // shows 0, then 1, then 2
+    alert(i);
+  }
+
