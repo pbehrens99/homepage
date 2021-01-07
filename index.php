@@ -16,13 +16,16 @@ if (isset($_GET['page'])) {
 
         <meta charset="UTF-8"/>
         <title><?php echo $Controller->getPageTitle($page); ?></title>
+
         <script src='https://code.jquery.com/jquery-3.5.1.js'></script>
+        <script src='js/ajax.js'></script>
+
 
         <link rel='stylesheet' type='text/css' href='css/main.css'/>
 
     </head>
     <body>
-    
+
         <section id="navigation">
             <?php $Controller->init('navigation'); ?>
         </section>
@@ -36,7 +39,6 @@ if (isset($_GET['page'])) {
     </body>
 
 
-    <script src='js/ajax.js'></script>
         
 
 </html>
