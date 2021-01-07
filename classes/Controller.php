@@ -17,10 +17,12 @@ class Controller
         $this->View         = new View();
 
         $this->pageTitle    = array(
-            'index'         => 'Philipp Behrens',
+            'index'         => 'Home',
             'about'         => 'Portfolio',
             'references'    => 'Referenzen',
             'contact'       => 'Kontakt',
+            'ajax'          => 'Ajax Test',
+            
         );
     }
 

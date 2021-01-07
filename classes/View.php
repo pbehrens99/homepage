@@ -9,6 +9,7 @@ class View
         $this->pageTemplates    = array(
             'index'         => 'templates/index.php',
             'about'         => 'templates/about.php',
+            'ajax'          => 'templates/ajax.php',
             'references'    => 'templates/references.php',
             'contact'       => 'templates/contact.php',
             '404'           => 'templates/404.php',
